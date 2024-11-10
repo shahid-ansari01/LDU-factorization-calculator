@@ -65,5 +65,71 @@ header h1 {
     width: 100%;
     box-sizing: border-box;
 }
+.matrix-input {
+    padding: 10px;
+    font-size: 1rem;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
+}
+
+.steps-container {
+    width: 90%;
+    max-width: 100%;
+    margin: 20px auto;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    color: #0c0a0a;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.steps-container h3 {
+    color: #f6e1e1;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.matrix-step {
+    margin-bottom: 20px;
+}
+
+.matrix-display {
+    display: grid;
+    gap: 10px;
+    margin: 10px 0;
+    justify-items: center;
+}
+
+.matrix-row {
+    display: flex;
+    justify-content: center;
+}
+
+.matrix-cell {
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 50px;
+}
+
+.operation-symbol {
+    font-size: 2rem;
+    margin: 0 10px;
+}
+
+.hidden {
+    display: none;
+}
 
 
