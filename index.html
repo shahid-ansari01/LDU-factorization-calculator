@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LDU Factorization</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>LDU Factorization Calculator</h1>
+    </header>
+    <section class="calculator">
+        <label for="matrix-dimension">Enter Matrix Dimension:</label>
+        <input type="number" id="matrix-dimension" min="1" step="1">
+        <button onclick="generateMatrixInputs()">Generate Matrix</button>
+        <div id="matrix-container" class="matrix-grid"></div>
+        <button id="submit-matrix" onclick="submitMatrix()" style="display:none;">Submit Matrix</button>
+    </section>
+    <div id="steps-container" class="steps-container hidden"></div>
+    <script src="script.js"></script>
+</body>
+</html>
