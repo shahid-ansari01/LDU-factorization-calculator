@@ -4,20 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LDU Factorization</title>
-    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>LDU Factorization Calculator</h1>
+        <h1>LDU Factorization</h1>
     </header>
-    <section class="calculator">
-        <label for="matrix-dimension">Enter Matrix Dimension:</label>
-        <input type="number" id="matrix-dimension" min="1" step="1">
-        <button onclick="generateMatrixInputs()">Generate Matrix</button>
-        <div id="matrix-container" class="matrix-grid"></div>
-        <button id="submit-matrix" onclick="submitMatrix()" style="display:none;">Submit Matrix</button>
-    </section>
-    <div id="steps-container" class="steps-container hidden"></div>
-    <script src="script.js"></script>
+    <main>
+        <section>
+            <p>Step 1: Enter the size of the matrix (e.g., 3 for a 3x3 matrix):</p>
+            <input type="number" id="matrixSize" min="2" value="3" class="input-field">
+            <button onclick="generateMatrix()" class="primary-btn">Generate Matrix</button>
+        </section>
+        <div id="matrixContainer" class="matrix-input"></div>
+        <button onclick="performLDU()" id="calculateButton" class="primary-btn hidden">Calculate LDU</button>
+        <div id="output"></div>
+    </main>
+    <script src="ldu-factorization.js"></script>
 </body>
 </html>
